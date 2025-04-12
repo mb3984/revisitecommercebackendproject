@@ -13,7 +13,7 @@ app.use(express.json());
 // Enable CORS for your frontend (you can set multiple origins if needed)
 app.use(
   cors({
-    origin: 'https://revisitecommercefrontendassignment.vercel.app',  // Replace with your frontend URL if deployed
+    origin: 'https://revisitecommercefrontendassignment.vercel.app/',  // Replace with your frontend URL if deployed
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     credentials: true,  // Allow credentials (cookies, authorization headers)
   })
