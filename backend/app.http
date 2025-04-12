@@ -16,7 +16,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3300/api/categories/
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjljMDRkZmZlOWNkODk5YjFhZjViMSIsImlhdCI6MTc0NDQyMjgwNCwiZXhwIjoxNzQ0NDU4ODA0fQ.nlh_UXHlTS6c0n_o18fzkQ-y_9j-E9oAju5HQlwgF7g
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmE1YzRmYzNmZDQzZjY2ZTgxNjgxMSIsImlhdCI6MTc0NDQ2MDkwOSwiZXhwIjoxNzQ0NDk2OTA5fQ.sJm-pL__CvYzIR3sKRr0C4IoFu0tpp-TGBh928Auyao
 
 {
     "name":"Laptop",
