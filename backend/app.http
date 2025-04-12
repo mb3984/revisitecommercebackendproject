@@ -34,3 +34,5 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjljMDRkZmZlOWNk
 }
 ###
 GET http://localhost:3300/api/categories/
+###
+GET http://localhost:3300/api/categories/67f9c7f1e3db6936c97c6489

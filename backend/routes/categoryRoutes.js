@@ -14,6 +14,18 @@ router.post("/", protect, async (req, res) => {
   await category.save();
   res.json({ message: "item added succesfully", category });
 });
+// GET category by ID
+router.get("/:id", async (req, res) => {
+  try {
+    const category = await Category.findById(req.params.id);
+    if (!category)
+      return res.status(404).json({ message: "Category not found" });
+    res.json(category);
+  } catch (err) {
+    res.status(500).json({ message: "Server error", error: err.message });
+  }
+});
+
 router.put("/:id", protect, async (req, res) => {
   const { name, itemCount, imageUrl } = req.body;
   console.log("Updated request body:", req.body);
