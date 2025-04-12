@@ -10,7 +10,14 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// Enable CORS for your frontend (you can set multiple origins if needed)
+app.use(
+  cors({
+    origin: 'http://localhost:5173',  // Replace with your frontend URL if deployed
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    credentials: true,  // Allow credentials (cookies, authorization headers)
+  })
+);
 
 app.use("/api/auth", authRoutes);
 app.use("/api/categories", categoryRoutes);
